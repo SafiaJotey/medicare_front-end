@@ -1,0 +1,24 @@
+.banner-container{
+    background-color: #10217d;
+}
+.banner {
+    background-color: #10217d;
+    
+    width: 100%;
+}
+  img{
+      width: 100%;
+  }
+  .title {
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+  }
+  .about-btn {
+    background-color: #16c2d5;
+    outline: none;
+    border: none;
+    padding: 10px 34px;
+    border-radius: 40px;
+    color: white;
+  }
