@@ -1,9 +1,9 @@
 
-import {  NavLink } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 import logo from "../..//images/logo.png";
 import "./Header.css"
-import Contact from './../Contact/Contact';
+
 
 const Header = () => {
   
@@ -23,20 +23,20 @@ const Header = () => {
   
 
                 <div className="d-flex justify-content-end my-5">
-                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/home" >
+                <Link  to="/home" >
                   Home
-                </NavLink>
+                </Link>
                 
-                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/home" >
+                <Link  to="/about" >
                   About
-                </NavLink>
+                </Link>
                 
-                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/home" >
+                <Link  to="/contact" >
                   Contact
-                </NavLink>
-                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/home" >
+                </Link>
+                <Link  to="/login" >
                   Login
-                </NavLink>
+                </Link>
 
                 </div>
                 

@@ -47,7 +47,7 @@ const Vision = () => {
                         <a href=""><i class="fas fa-user-md"></i></a>
                     
                         <div className="my-5  my-md-2"> 
-                        <h4>24/7 hour service</h4>
+                        <h4>Well Known Doctors</h4>
                         <p className="ms-5">You are our priority.We are here always for you. </p>
                         </div>
                         

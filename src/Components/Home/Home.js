@@ -5,6 +5,7 @@ import Services from "../Services/Services.js";
 
 import Banner from "./../Banner/Banner";
 import Vision from './Vision/Vision';
+import Gallery from "./Gallery/Gallery";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner></Banner>
       <Services></Services>
       <Vision></Vision>
+      <Gallery></Gallery>
       <Footer></Footer>
     </div>
   );

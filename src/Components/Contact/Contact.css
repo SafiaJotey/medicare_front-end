@@ -1,0 +1,40 @@
+.contact form{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 30px;
+    background-color: #10217d;
+    border-radius: 30px;
+    margin: 50px 0;
+    border-bottom: 5px solid #16c2d5;
+}
+.contact .form-control{
+    padding:2% 30% 2% 2%;
+    border: 1px solid #16c2d5;
+}
+.contact h3{
+        font-size: 44px;
+        color: #10217d ;
+        font-weight: 700;
+        margin-bottom: 30px;
+   
+}
+
+.contact .social{
+    display: flex;
+    justify-content: space-around;
+}
+.contact .social a{
+    padding: 20px 30px;
+    border: 2px solid #10217d;
+    border-radius: 20px;
+    color:#10217d ;
+    font-size: 30px;
+    border-bottom: 5px solid #16c2d5;
+    
+}
+.contact .social a:hover{
+   
+    background-color: #10217d;
+   color: white;
+
+}

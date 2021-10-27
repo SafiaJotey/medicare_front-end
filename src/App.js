@@ -7,6 +7,8 @@ import Home from "./Components/Home/Home";
 import Error from "./Components/Error/Error";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
+import Login from './Components/Login/Login';
+import Register from "./Components/Register/Register";
 export const userContext = createContext();
 function App() {
   const [user, setUser] = useState({});
@@ -33,6 +35,12 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact></Contact>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/register">
+               <Register></Register>
             </Route>
             {/* <Route path="/details/:teamId">
               <Details></Details>
