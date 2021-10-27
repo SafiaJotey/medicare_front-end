@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
+
 import {  NavLink } from 'react-router-dom';
-import { userContext } from "./../../App";
+
 import logo from "../..//images/logo.png";
+import "./Header.css"
+import Contact from './../Contact/Contact';
 
 const Header = () => {
-    const [user, setUser] = useContext(userContext);
-  console.log(user);
+  
     return (
         <div className="MenuBar-container">
       <div className="container">
@@ -26,13 +27,17 @@ const Header = () => {
                   Home
                 </NavLink>
                 
-                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/about" >
-                About
+                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/home" >
+                  About
                 </NavLink>
                 
-                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/contact" >
+                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/home" >
                   Contact
                 </NavLink>
+                <NavLink activeStyle={{fontWeight: "bold",color: "#16c2d5", textDecoration:"none",margin:'5px'}} to="/home" >
+                  Login
+                </NavLink>
+
                 </div>
                 
                 

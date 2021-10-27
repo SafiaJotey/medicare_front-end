@@ -1,0 +1,13 @@
+ .all-services{
+    padding: 50px;
+    color: black;
+  }
+ 
+.all-services h1{
+  color: #10217d;
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}

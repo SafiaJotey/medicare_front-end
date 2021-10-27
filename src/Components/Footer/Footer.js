@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../..//images/logo.png";
+
 
 
 
@@ -17,7 +17,7 @@ const Footer = () => {
                 
                 <p className="mt-4 ">
                   <small>
-                    *is one of the best kinds of company in the pharmaceutical industry in Bangladesh manufacturing branded generic products for local and overseas market in Asia
+                    *is one of the best health checkup center in Bangladesh, we also manufacturing branded pharmaceutical generic products for local and overseas market in Asia
                   </small>
                 </p>
 

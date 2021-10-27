@@ -1,19 +1,21 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-import React, { createContext, useState } from "react";
+import React, { createContext, useState,useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Error from "./Components/Error/Error";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-
-// import Error from "./components/Error/Error";
 export const userContext = createContext();
 function App() {
-  const [user, setUser] = useState({
-    name: "hero alom",
-  });
+  const [user, setUser] = useState({});
+  useEffect(()=>{
+    fetch("../public/data.json")
+    .then(res=>res.json()
+    .then(data=>setUser(data))
+    )
+  },[])
   return (
     <div className="App">
       <header className="App-header">
