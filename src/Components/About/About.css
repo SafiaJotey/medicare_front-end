@@ -1,8 +1,10 @@
+.about img{
+    width: 80%;
+    margin-bottom: 10px;
+}
 .about{
     color: rgb(59, 58, 58);
-    
-    
-    
+    margin:100px auto;
 }
 .about h1{
     color: #10217d ;

@@ -1,6 +1,7 @@
  .all-services{
     padding: 50px;
     color: black;
+    margin: 100px auto;
   }
  
 .all-services h1{
@@ -9,5 +10,5 @@
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }

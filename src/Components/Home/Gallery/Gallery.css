@@ -1,6 +1,11 @@
+.gallery_grid{
+    margin: 100px auto;
+}
+
 .gallery_img img{
     border-radius: 20px;
     border: 1px solid blue;
     margin: 10px 0;
+    width: 80%;
     
 }

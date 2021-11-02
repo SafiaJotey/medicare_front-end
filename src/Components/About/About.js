@@ -5,8 +5,7 @@ import dr1 from '../../images/dr1.jpg'
 import dr2 from '../../images/dr2.jpg'
 import dr3 from '../../images/dr3.jpg'
 import dr4 from '../../images/dr4.jpg'
-import Header from './../Header/Header';
-import Footer from '../Footer/Footer';
+
 
 
 
@@ -14,15 +13,15 @@ import Footer from '../Footer/Footer';
 const About = () => {
     return (
       
-        <div className='about  '>
+        <div className='about container '>
              
-            <div class=" container ">
+            <div >
                 <h1>ABOUT US</h1>
-                    <div class="row d-flex justify-content-center align-items-center details">
-                        <div class="col-12 col-lg-6">
+                    <div className="row d-flex justify-content-center align-items-center details">
+                        <div className="col-12 col-lg-6">
                         <img src={about} alt="" />
                         </div>
-                        <div class="col-12 col-lg-6 text-lg-start">
+                        <div className="col-12 col-lg-6 text-lg-start">
                        
                        <h3> We Offer <br></br>
                         Fast & Reliable </h3> 
@@ -41,33 +40,33 @@ const About = () => {
             <div className="team_grid container">
                     
                     <h2>Meet Our Top Doctors</h2>
-                <div class="row container">
-                                <div class="col-12 col-md-3  gallery_img">
+                <div className="row container">
+                                <div className="col-12 col-md-3  gallery_img">
                                         <div className="overlay ">
-                                                <a><img src={dr1}></img></a>
+                                                <a href="#"><img src={dr1}/></a>
                                         </div>
                                         <h5>Dr. William Mason</h5>
                                             <p>CHIEF DOCTOR</p>
                                 </div>
-                                <div class="col-12 col-md-3 gallery_img">
+                                <div className="col-12 col-md-3 gallery_img">
                                             <div className="overlay">
-                                                <a><img src={dr2}></img></a>
+                                                <a href="#"><img src={dr2}/></a>
                                             </div>
                                             <h5>Dr. Amelia Grace
                                             </h5>
                                             <p>SENIOR DOCTOR</p>
                                 </div>
-                                <div class="col-12 col-md-3 gallery_img">
+                                <div className="col-12 col-md-3 gallery_img">
                                             <div className="overlay ">
-                                            <a><img src={dr3}></img></a>
+                                            <a href="#"><img src={dr3}/></a>
                                             </div>
                                             <h5>Dr. James Daniel</h5>
                                             <p>PHYSICIAN </p>
                                 </div>
                                 
-                                <div class="col-12 col-md-3 gallery_img">
+                                <div className="col-12 col-md-3 gallery_img">
                                     <div className="overlay ">
-                                                <a><img src={dr4}></img></a>
+                                                <a href="#"> <img src={dr4}/></a>
                                     </div>
                                     <h5>Dr. Wiken Jeson</h5>
                                             <p>SURGON</p>

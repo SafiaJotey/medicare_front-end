@@ -1,11 +1,20 @@
+
 .contact form{
     color: rgb(255, 255, 255);
     text-align: left;
     padding: 30px;
-    background-color: #10217d;
+    
     border-radius: 30px;
+    background: url("../../images/background.jpg");
+    background-position: center;
+    background-size: cover;
     margin: 50px 0;
-    border-bottom: 5px solid #16c2d5;
+    /* border-bottom: 5px solid #16c2d5; */
+    margin: 100px auto;
+    width: 70%;
+}
+.contact label{
+    color: #10217d ;
 }
 .contact .form-control{
     padding:2% 30% 2% 2%;
@@ -15,7 +24,7 @@
         font-size: 44px;
         color: #10217d ;
         font-weight: 700;
-        margin-bottom: 30px;
+        margin: 30px 0;
    
 }
 
@@ -37,4 +46,9 @@
     background-color: #10217d;
    color: white;
 
+
+}
+
+.connected{
+    margin: 100px auto;
 }

@@ -1,25 +1,31 @@
+
 .login form{
     color: rgb(255, 255, 255);
     text-align: left;
-    padding: 30px;
+    padding: 20px ;
     background-color: #10217d;
     border-radius: 30px;
-    margin: 50px 0;
     border-bottom: 5px solid #16c2d5;
+    width: 70%;
+    
+    margin: 0 auto;
 }
 .login .form-control{
     padding:2% 30% 2% 2%;
     border: 1px solid #16c2d5;
 }
 .login h3{
-        font-size: 44px;
-        color: #10217d ;
+        font-size: 30px;
+        color: #ffffff ;
         font-weight: 700;
-        margin-bottom: 30px;
+        
    
 }
 .login a{
    text-decoration: underline;
    font-size: 10px;
 
+}
+button{
+    margin:10px;
 }

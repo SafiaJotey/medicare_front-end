@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="banner-container ">
       <div className="">
         <div className="row d-flex banner align-items-center justify-content-center">
-          <Header></Header>
+          
           <div className="col-md-5 p-4">
             <h1 className="title ">
               YOUR HEALTH, <br /> OUR FIRST PRIORITY

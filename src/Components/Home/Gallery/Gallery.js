@@ -11,36 +11,36 @@ const Gallery = () => {
         <div className="gallery_grid container">
                     
                     <h2>Gallery</h2>
-                <div class="row container">
-                                <div class="col-12 col-md-4 gallery_img">
+                <div className="row ">
+                                <div className="col-12 col-md-4 gallery_img">
                                         <div className="overlay">
                                                 <a><img src={img1}></img></a>
                                         </div>
                                 </div>
-                                <div class="col-12 col-md-4 gallery_img">
+                                <div className="col-12 col-md-4 gallery_img">
                                             <div className="overlay">
                                                 <a><img src={img2}></img></a>
                                             </div>
                                 </div>
-                                <div class="col-12 col-md-4 gallery_img">
+                                <div className="col-12 col-md-4 gallery_img">
                                             <div className="overlay">
                                             <a><img src={img3}></img></a>
                                             </div>
                                 </div>
                                 
-                                <div class="col-12 col-md-4 gallery_img">
+                                <div className="col-12 col-md-4 gallery_img">
                                     <div className="overlay">
                                                 <a><img src={img4}></img></a>
                                     </div>
                                 </div>
                 
-                                <div class="col-12 col-md-4 gallery_img">
+                                <div className="col-12 col-md-4 gallery_img">
                                         <div className="overlay">
                                                     <a><img src={img5}></img></a>
                                         </div>
                                     
                                 </div>
-                                <div class="col-12 col-md-4 gallery_img">
+                                <div className="col-12 col-md-4 gallery_img">
                                         <div className="overlay">
                                                     <a><img src={img6}></img></a>
                                         </div>

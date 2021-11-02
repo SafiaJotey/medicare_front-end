@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import Footer from "../Footer/Footer";
+
 import Services from "../Services/Services.js";
 
 import Banner from "./../Banner/Banner";
@@ -15,7 +15,7 @@ const Home = () => {
       <Services></Services>
       <Vision></Vision>
       <Gallery></Gallery>
-      <Footer></Footer>
+     
     </div>
   );
 };

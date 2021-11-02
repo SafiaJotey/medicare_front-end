@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
    
-     const{Service,img,description}= service;
+     const{ServiceId,Service,img,description}= service;
+     
     
     return (
      
@@ -20,7 +21,7 @@ const Service = ({service}) => {
                   <h3>{Service}</h3>
                   <p>{description}</p>
                   
-                  <Link to="">
+                  <Link to={`/serviceDetails/${ServiceId}`}>
                     <button className="btn">Details</button>
                  </Link>
                 </div>

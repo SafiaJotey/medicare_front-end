@@ -1,0 +1,17 @@
+.detail{
+    color: rgb(61, 60, 60);
+}
+.detail h1{
+    color: rgb(10, 2, 128);
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 700;
+    
+}
+.detail P{
+    color: rgb(61, 60, 60);
+    font-size: 20px;
+
+    
+    
+}

@@ -12,7 +12,7 @@ const Services = () => {
     fetch(`./data.json`)
       .then((res) => res.json())
       .then((data) => setAllServices(data));
-  }, []);
+  }, [allServices]);
   return (
     <div className="container all-services">
       <div className="all-service">

@@ -1,5 +1,6 @@
 .vision{
     color: rgb(75, 73, 73);
+    margin: 100px auto;
 }
 
 h2{
@@ -11,6 +12,7 @@ h2{
 .img{
     border-radius: 20px;
     border:2px solid #10217d;
+    width: 80%;
 }
 .vision p{
     font-size: 20px;

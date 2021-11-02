@@ -1,37 +1,38 @@
-[{
-            "ServiceId":"A1",
+[
+    {
+            "ServiceId":1,
             "Service":"Surgery & Transplants ",
             "description":"Transplant surgery for pulmonary hypertension (PH) can involve replacing the heart and lungs, or just the lungs. It is more common in children than in adults, but is rarely used these days.",
             "img":"https://liverfoundation.org/wp-content/uploads/2020/07/Transplant-Team.jpg"
         },
     {
-            "ServiceId":"A2",
+            "ServiceId":2,
             "Service":"Outpatient Rehabilitation",
             "description":"As part of your recovery, you may start by getting care at a hospital. You may then move to outpatient treatment. Depending on the nature or extent of your injury, your treatment .",
             "img":"https://mcleancare.org/wp-content/uploads/2021/04/20ddd258-sep_inpatient_outpatient_rehab_blog_image_article_page.jpg"
         }
     ,
     {
-            "ServiceId":"A3",
+            "ServiceId":3,
             "Service":"Lab Test ",
             "description":"Lab Tests Online is an award-winning health information web resource designed to help patients and caregivers understand the many lab tests that are a vital part of medical care. ",
             "img":"https://researchresearch-news-wordpress-media-live.s3.eu-west-1.amazonaws.com/2020/04/lab_testtube_flask.jpg"
         },
     {
-            "ServiceId":"A4",
+            "ServiceId":4,
             "Service":"Medical Counseling ",
             "description":"Primary care providers, the first stop for most people’s health-related complaints, operate under ever-increasing pressures to provide care for more people in less time. ",
             "img":"https://5.imimg.com/data5/XV/HQ/CB/SELLER-84710509/medicine-education-in-abroad-jpg-500x500.jpg"
         },
     
         {
-            "ServiceId":"A5",
+            "ServiceId":5,
             "Service":"Weight Loss",
             "description":"From healthy diet plans to helpful weight loss tools, here you'll find WebMD's latest diet news and information.",
             "img":"https://res.cloudinary.com/grohealth/image/upload/$wpsize_!post-thumbnail!,w_1000,h_600,c_fill,g_auto/v1588092399/Unexplained-Weight-Loss.png"
         },
     {
-            "ServiceId":"A6",
+            "ServiceId":6,
             "Service":"Heart Clinic",
             "description":"Private Cardiologist at One Heart Clinic in Harley Street, London provides best cardiac care & diagnostics services. Book a consultation with our doctors!",
             "img":"https://nation.com.pk/print_images/medium/2016-11-27/uae-doctors-invent-world-s-first-virtual-heart-clinic-1480266148-5133.jpg"
