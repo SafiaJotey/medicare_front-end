@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation,useHistory } from 'react-router';
 // import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import "./Login.css"
@@ -12,6 +13,20 @@ const Login = () => {
         toggleLogin,
         handleRegistration,
          isLogin, error } = useAuth();
+         const history=useHistory();
+       const location=useLocation();
+       const redirect_url=location.state?.from || "/home";
+
+       const handleSignInUsingGoogle=()=>{
+           signInUsingGoogle()
+           .then(result => {
+               history.push(redirect_url);
+             console.log(result.user);
+            // setUser(result.user);
+        })
+       }
+
+
 
     return (
         <div>
@@ -52,7 +67,7 @@ const Login = () => {
                         {isLogin ? 'Login' : 'Register'}
                     </button>
                     
-                    <button className="btn btn-warning mx-1" onClick={signInUsingGoogle}> Google Sign In</button>
+                    <button className="btn btn-warning mx-1" onClick={handleSignInUsingGoogle}> Google Sign In</button>
                 </form>
 
                

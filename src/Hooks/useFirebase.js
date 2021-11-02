@@ -20,28 +20,25 @@ const useFirebase = () => {
 //SignIn using Google
     const signInUsingGoogle = () => {
         setIsLoading(true);
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                console.log(result.user);
-                setUser(result.user);
-            })
+        return signInWithPopup(auth, googleProvider)
+           
             .finally(() => setIsLoading(false));
     }
     
     const handleNameChange = e => {
-        // console.log(e.target.value);
+        
         setName(e.target.value);
     }
     const handleEmailChange = e => {
-        // console.log(e.target.value);
+        
         setEmail(e.target.value);
     }
     const handlePasswordChange = e => {
-        //console.log(e.target.value);
+        
         setPassword(e.target.value);
     }
     const toggleLogin = e => {
-        // console.log(e.target.checked);
+        
         setIsLogin(e.target.checked);
     }
 
@@ -56,7 +53,7 @@ const useFirebase = () => {
             setError('password must contain two uppercase.');
             return;
         }
-        // isLogin ? processLogin(email, password) : registerNewUser(email, password);
+        
         if (isLogin) {
             processLogin(email, password);
         }
@@ -86,7 +83,7 @@ const useFirebase = () => {
                 const user = result.user;
                 console.log(user);
                 setError('Successfully Registered!');
-                verifyEmail();
+               
                 setUserName();
                 
             })
@@ -100,13 +97,7 @@ const useFirebase = () => {
             .then(result => { })
     }
 
-    const verifyEmail = () => {
-        sendEmailVerification(auth.currentUser)
-            .then(result => {
-                console.log(result);
-            });
-    }
-
+   
    
 
 

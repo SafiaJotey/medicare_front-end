@@ -7,14 +7,15 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Login from './Components/Login/Login';
 
-
+import ServiceDetails from './Components/ServiceDetails/ServiceDetails/ServiceDetails';
 
 import AuthProvider from "./Context/AuthProvider";
-import PrivateRouter from './Components/PrivateRoute/PrivateRouter';
+
 import Home from "./Components/Home/Home";
-import ServiceDetails from './Components/ServiceDetails/ServiceDetails/ServiceDetails';
+
 import Footer from './Components/Footer/Footer';
 import Header from "./Components/Header/Header";
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -45,9 +46,9 @@ function App() {
             <Login></Login>
           </Route>
 
-          <Route path="/ServiceDetails/:id">
+          <PrivateRoute path="/ServiceDetails/:id">
             <ServiceDetails></ServiceDetails>
-          </Route>
+          </PrivateRoute>
 
 
 
