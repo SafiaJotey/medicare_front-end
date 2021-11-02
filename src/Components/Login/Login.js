@@ -42,7 +42,7 @@ const Login = () => {
                             <div className="form-check">
                                 <input onChange={toggleLogin} className="form-check-input" type="checkbox" id="gridCheck1" />
                                 <label className="form-check-label" htmlFor="gridCheck1">
-                                    Allready Registerd?
+                                    Already Registerd?
                                 </label>
                             </div>
                         </div>

@@ -1,17 +1,21 @@
 import "./App.css";import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./Components/Home/Home";
+
 import Error from "./Components/Error/Error";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Login from './Components/Login/Login';
 
-import ServiceDetails from "./Components/ServiceDetails/ServiceDetails/ServiceDetails";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+
+
 import AuthProvider from "./Context/AuthProvider";
 import PrivateRouter from './Components/PrivateRoute/PrivateRouter';
+import Home from "./Components/Home/Home";
+import ServiceDetails from './Components/ServiceDetails/ServiceDetails/ServiceDetails';
+import Footer from './Components/Footer/Footer';
+import Header from "./Components/Header/Header";
+
 
 function App() {
  

@@ -4,11 +4,12 @@ import {  Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 import "./Header.css"
+import useFirebase from './../../Hooks/useFirebase';
 
 
 const Header = () => {
   const {user}=useAuth();
-  
+  const {logout}=useFirebase();
     return (
       
       <>
@@ -30,16 +31,20 @@ const Header = () => {
     </Nav>
     <Nav>
       {user?.email?
-       <Nav><Button variant="light">Logout</Button> {' '}</Nav>:
+      <div>
+        <Navbar.Text>
+      Signed in as: <a href="#login">{user?.displayName}</a>
+     
+     </Navbar.Text>
+       <Nav><Button onClick={logout} variant="light">Logout</Button> {' '}</Nav>
+      </div>:
+      
       <Nav.Link as={Link} to="/login">Login</Nav.Link>
     }
       
       
     </Nav>
-    <Navbar.Text>
-       Signed in as: <a href="#login">{user?.displayName}</a>
-      
-    </Navbar.Text>
+    
   </Navbar.Collapse>
   </Container>
 </Navbar>
