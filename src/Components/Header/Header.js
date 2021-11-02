@@ -8,8 +8,8 @@ import useFirebase from './../../Hooks/useFirebase';
 
 
 const Header = () => {
-  const {user}=useAuth();
-  const {logout}=useFirebase();
+  const {user,logout}=useAuth();
+
     return (
       
       <>

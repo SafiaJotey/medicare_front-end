@@ -12,6 +12,7 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
+    
 
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider();
@@ -84,9 +85,10 @@ const useFirebase = () => {
             .then((result) => {
                 const user = result.user;
                 console.log(user);
-                setError('');
+                setError('Successfully Registered!');
                 verifyEmail();
                 setUserName();
+                
             })
             .catch(error => {
                 setError(error.message);
