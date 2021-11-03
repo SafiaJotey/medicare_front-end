@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification,  updateProfile } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile } from "firebase/auth";
 import initializeAuthentication from './../Components/Login/Firebase/firebase.init';
 
 initializeAuthentication();
@@ -12,33 +12,37 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
-    
 
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider();
-   
-//SignIn using Google
+    const githubProvider = new GithubAuthProvider();
+
     const signInUsingGoogle = () => {
         setIsLoading(true);
         return signInWithPopup(auth, googleProvider)
-           
+         
             .finally(() => setIsLoading(false));
     }
-    
+    const signInUsingGithub = () => {
+        signInWithPopup(auth, githubProvider)
+            .then(result => {
+                setUser(result.user);
+            })
+    }
     const handleNameChange = e => {
-        
+        // console.log(e.target.value);
         setName(e.target.value);
     }
     const handleEmailChange = e => {
-        
+        // console.log(e.target.value);
         setEmail(e.target.value);
     }
     const handlePasswordChange = e => {
-        
+        //console.log(e.target.value);
         setPassword(e.target.value);
     }
     const toggleLogin = e => {
-        
+        // console.log(e.target.checked);
         setIsLogin(e.target.checked);
     }
 
@@ -53,7 +57,7 @@ const useFirebase = () => {
             setError('password must contain two uppercase.');
             return;
         }
-        
+        // isLogin ? processLogin(email, password) : registerNewUser(email, password);
         if (isLogin) {
             processLogin(email, password);
         }
@@ -62,7 +66,7 @@ const useFirebase = () => {
         }
 
     }
-     //signIn using email password
+
     const processLogin = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
@@ -75,17 +79,14 @@ const useFirebase = () => {
             });
     }
 
-
-    //Register
     const registerNewUser = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 const user = result.user;
                 console.log(user);
-                setError('Successfully Registered!');
-               
+                setError('');
+                verifyEmail();
                 setUserName();
-                
             })
             .catch(error => {
                 setError(error.message);
@@ -97,8 +98,17 @@ const useFirebase = () => {
             .then(result => { })
     }
 
-   
-   
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+            .then(result => {
+                console.log(result);
+            });
+    }
+
+    const handleResetPassword = () => {
+        sendPasswordResetEmail(auth, email)
+            .then(result => { })
+    }
 
 
     // observe user state change
@@ -116,7 +126,7 @@ const useFirebase = () => {
     }, []);
 
 
-  //signOut
+
     const logout = () => {
         setIsLoading(true);
         signOut(auth)
@@ -130,13 +140,13 @@ const useFirebase = () => {
         user,
         error,
         signInUsingGoogle,
-        
+        signInUsingGithub,
         handleNameChange,
         handleEmailChange,
         handlePasswordChange,
         toggleLogin,
         handleRegistration,
-
+        handleResetPassword,
         isLogin,
         isLoading,
         logout

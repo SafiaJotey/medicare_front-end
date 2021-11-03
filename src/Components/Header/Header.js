@@ -4,7 +4,7 @@ import {  Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 import "./Header.css"
-import useFirebase from './../../Hooks/useFirebase';
+
 
 
 const Header = () => {
@@ -31,9 +31,11 @@ const Header = () => {
     </Nav>
     <Nav>
       {user?.email?
-      <div>
+      <div className="d-flex align-items-center">
         <Navbar.Text>
-      Signed in as: <a href="#login">{user?.displayName}</a>
+      Signed in as: <a href="#login">{
+      user.displayName? `${user?.displayName}`:`${user?.email}`
+      }</a>
      
      </Navbar.Text>
        <Nav><Button onClick={logout} variant="light">Logout</Button> {' '}</Nav>
@@ -41,6 +43,7 @@ const Header = () => {
       
       <Nav.Link as={Link} to="/login">Login</Nav.Link>
     }
+      
       
       
     </Nav>
@@ -51,45 +54,7 @@ const Header = () => {
     </>
 
 
-    //     <div className="MenuBar-container container-fluid">
-    //   <div className="container">
-    //     <div className="row">
-    //       <div className="col-md-3">
-    //         <div className="logo-img">
-    //           <img className="w-75" src={logo} alt="" />
-    //         </div>
-    //       </div>
-    //       <div className="col-md-9">
-    //         <div className="menu-container ">
-              
-        
-  
-
-    //             <div className="d-flex justify-content-end my-5">
-    //             <Link  to="/home" >
-    //               Home
-    //             </Link>
-                
-    //             <Link  to="/about" >
-    //               About
-    //             </Link>
-                
-    //             <Link  to="/contact" >
-    //               Contact
-    //             </Link>
-    //             <Link  to="/login" >
-    //               Login
-    //             </Link>
-
-    //             </div>
-                
-                
-              
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
+   
     );
 };
 

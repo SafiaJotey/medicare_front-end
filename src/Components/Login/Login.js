@@ -20,19 +20,23 @@ const Login = () => {
        const handleSignInUsingGoogle=()=>{
            signInUsingGoogle()
            .then(result => {
+            
+            console.log(result.user);
                history.push(redirect_url);
-             console.log(result.user);
-            // setUser(result.user);
-        })
-       }
+              
+            
 
+        })
+       };
+
+    
 
 
     return (
         <div>
             <div className=" my-5 login">
 
-                <form onSubmit={handleRegistration}  >
+                <form onSubmit={handleRegistration } >
                     <h3 className="my-2">Please {isLogin ? 'Login' : 'Register'}</h3>
                     {!isLogin && <div className="row mb-3">
                         
